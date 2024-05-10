@@ -1,0 +1,8 @@
+% urodziny/2
+urodzony(Jan, 1974).
+urodzony(Ludwik, 1976).
+urodzony(Maciej, 1960).
+urodzony(Grzegorz, 1975).
+
+% starszy/2
+starszy(X,Y) :- urodzony(X,RokX), urodzony(Y,RokY), RokX > RokY.
